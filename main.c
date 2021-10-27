@@ -216,8 +216,13 @@ unsigned int keyfind()
 				}
 				else
 				{
-					d2=d;
 					LCD_Clear();
+					LCD_String("Nhap 3 so");
+					LCD_Command(0xC0);
+					LCD_String("thoi ban oi");
+					_delay_ms(500);
+					d2=0;
+				
 				}
 				
 				itoa(d2,x,10);
